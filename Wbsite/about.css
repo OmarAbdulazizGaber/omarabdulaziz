@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    text-align: right;
+    padding-top: 60px
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* تغيير الخلفية إلى خلفية شفافة */
+    padding: 0.5rem 0;
+    text-align: center;
+    left: 0; /* تمديد الشريط إلى اليسار */
+    right: 0; /* تمديد الشريط إلى اليمين */
+    position: absolute; /* تحديد الوضع ليكون absolute */
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* تغيير لون الروابط إلى اللون الأبيض */
+    font-size: 1.2rem;
+    font-family: serif;
+    
+}
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* تغيير لون الروابط إلى اللون الأبيض */
+    font-size: 1.2rem;
+    font-family: serif;
+    
+}
+
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.section p {
+    margin: 10px 0;
+    unicode-bidi: embed; /* Prevents mixed text direction issues */
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}

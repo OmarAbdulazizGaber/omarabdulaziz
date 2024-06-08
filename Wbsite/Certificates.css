@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* تغيير الخلفية إلى خلفية شفافة */
+    padding: 0.8rem 0;
+    text-align: center;
+    left: 0; /* تمديد الشريط إلى اليسار */
+    right: 0; /* تمديد الشريط إلى اليمين */
+    position: absolute; /* تحديد الوضع ليكون absolute */
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* تغيير لون الروابط إلى اللون الأبيض */
+    font-size: 1.2rem;
+    font-family: serif;
+    
+}
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* تغيير لون الروابط إلى اللون الأبيض */
+    font-size: 1.2rem;
+    font-family: serif;
+    
+}
+
+
+.header {
+    background-color: blue;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 4rem auto 0 auto; /* مسافة من الأعلى، الجانبين أوتوماتيكياً */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px; /* أطراف بيضاوية من كل الجهات */
+    width: 90%; /* عرض الشريط ليكون 90% من عرض الصفحة */
+    margin-top: 5rem; /* تعديل المسافة من الأعلى */
+}
+
+
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header .icon {
+    margin-left: 1rem;
+    width: 40px;
+    height: auto;
+}
+
+.content {
+    padding-top: 8rem; /* مساحة لإظهار الشريطين */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.certificate-item {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none; /* إزالة الخط السفلي للرابط */
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+

@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* تعطيل التمرير الأفقي */
+    overflow-y: auto; /* تمكين التمرير العمودي */
+    background-color: rgba(78, 71, 71, 0.817); 
+    min-height: 220vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 20px 0;
+    margin-top: 60px;
+    margin-left: 89px;
+    flex-wrap: wrap; 
+}
+
+.portfolio-item {
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 10px;
+    background-color: white;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    transition: transform 0.3s ease-in-out; /* تأثير تحويل تدريجي */
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    /* تكبير الحاوية عند مرور الماوس */
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    border-radius: 10px;
+    width: 150px; /* الأبعاد الأصلية للصورة */
+    height: 150px; /* الأبعاد الأصلية للصورة */
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.portfolio-item p {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    transition: font-size 0.3s ease-in-out; /* تأثير تكبير النص */
+}
+
+.portfolio-item:hover p {
+    font-size: 1.2rem; /* الحجم الأصلي للنص */
+}
+
+.portfolio-item:nth-child(n+8) {
+    margin-top: 20px; 
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-family: serif;
+    padding-top: 00.1%; 
+    height: 60px; 
+}
+
+footer p {
+    margin: 5px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+
+#contact-info {
+    top: 5px; 
+    position: relative; 
+    padding-right: 210px;
+} 
+
+#phone-number {
+    top: -34px; 
+    position: relative; 
+    padding-left: 150px;
+}
+
+#payment-methods {
+    font-family: 'serif'; 
+    font-size: 20px; 
+    color: #ffffff; 
+    text-align: center; 
+    margin: 10px 0; 
+    position: relative; 
+    padding-left: 390px;
+    top: -77px; 
+} 
+
+#icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 60px; 
+    position: relative; 
+    top: -115px; 
+}
+
+#icons-container div {
+    margin-right: 10px; 
+    justify-content: flex-start;
+}
+
+#visa img {
+    display: flex; 
+    width: 42px; 
+    height: 26px; 
+}
+
+#masterCard img {
+    display: flex; 
+    width: 41px; 
+    height: 25px; 
+}
+
+#meza img {
+    display: flex; 
+    width: 46px; 
+    height: 25px; 
+}
+
+#vodafone img {
+    display: flex; 
+    width: 35px; 
+    height: 27px; 
+}
+
+#orange img {
+    display: flex; 
+    width: 26px; 
+    height: 27px; 
+}
+
+#etisalat img {
+    display: flex; 
+    width: 71px; 
+    height: 18px; 
+}
+
+#fawry img {
+    display: flex; 
+    width: 56px; 
+    height: 18px; 
+}
+
+#paypal img {
+    display: flex; 
+    width: 21px; 
+    height: 25px; 
+}
+
+nav {
+    background-color: rgb(54, 52, 52); 
+    padding: 1rem 0; 
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    z-index: 2; 
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; /* توسيط العناصر أفقياً */
+    align-items: center; /* توسيط العناصر عمودياً */
+}
+
+nav ul li {
+    margin: 0 3rem;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.2rem; 
+    font-family: serif; 
+}
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* خلفية سوداء */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 35px; /* زيادة حجم الخط */
+    color: #fff;
+    cursor: pointer;
+    width: 40px; /* زيادة حجم الدائرة */
+    height: 40px; /* زيادة حجم الدائرة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* جعل الزر دائريًا */
+    background-color: rgba(0, 0, 0, 0.822) الخلفية 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    footer p {
+        margin: 10px 0;
+        display: inline-block;
+        text-align: center; /* محاذاة النص في وسط الفوتر */
+        font-size: 12px; /* تعيين حجم النص بـ 18 بيكسل */
+    }
+}
+
+
